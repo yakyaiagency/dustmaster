@@ -189,29 +189,9 @@
 										
 									</ul>
 								</li>
-								<li class="dropdown">
-									<a href="!#">ติดต่อเรา</a>
-									<ul class="dropdown-menu clearfix">
-										<li><a target="_blank" href="service.html">Services</a></li>
-										<li class="dropdown">
-											<a href="service-single.html">Services Details</a>
-											<ul class="dropdown-menu clearfix">
-												<li><a target="_blank" href="service-single.html">Web Development</a></li>
-												<li><a target="_blank" href="service-single.html">UI/UX Design</a></li>
-												<li><a target="_blank" href="service-single.html">Digital Marketing</a></li>
-												<li><a target="_blank" href="service-single.html">Product Design</a></li>
-												<li><a target="_blank" href="service-single.html">Mobile Solutions</a></li>
-												<li><a target="_blank" href="service-single.html">App Development</a></li>
-												<li><a target="_blank" href="service-single.html">Email Marketing</a></li>
-											</ul>
-										</li>
-										<li><a target="_blank" href="team.html">Team Page</a></li>
-										<li><a target="_blank" href="team-single.html">Team Details</a></li>
-										<li><a target="_blank" href="faq.html">FAQ Page</a></li>
-										<li><a target="_blank"  href="pricing.html">Pricing Page</a></li>
-										<li><a target="_blank" href="contact.html">Contact Page</a></li>
-										<li><a target="_blank" href="mission.html">Mission Page</a></li>
-									</ul>
+								<li class="dropdown ori-megamenu">
+									<a data-bs-toggle="modal" data-bs-target="#exampleModal">ติดต่อเรา</a>
+									
 								</li>
 
 								
@@ -341,7 +321,7 @@
 						
 							<li><a target="_blank" href="about.html">บริการจากเรา</a></li>
 							<li><a target="_blank" href="about.html">โปรโมชั่นเดือนนี้</a></li>
-							<li><a target="_blank" href="about.html">ติดต่อเรา</a></li>
+							<li><a target="_blank" href="#exampleModal">ติดต่อเรา</a></li>
 							
 							
 							
@@ -446,11 +426,14 @@
 				<h1 class="wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1000ms">บริการทำความสะอาด<span> กำจัดไรฝุ่น ดูดไรฝุ่น ดูดฝุ่นโซฟา ดูดฝุ่นที่นอน</span></h1>
 				<p class="wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1000ms">Dust Master Thailand เราคือผู้เชี่ยวชาญ ทีมงานมืออาชีพ ในเรื่องบริการการทำความสะอาด พร้อมบริการฆ่าเชื้อโควิดและฟื้นฟูสภาพฟูกที่นอน โซฟา พรมได้อย่างที่มีประสิทธิภาพมากที่สุด</p>
 				<br>
+
+				
 				<div class="ori-banner-form-4" data-wow-delay="600ms" data-wow-duration="1000ms">
 					
-						<button  class="fa fa-calendar" href="https://liff.line.me/1645278921-kWRPP32q/?accountId=742pucph" type="submit"> ทำการนัดหมาย</button>
-						<button  class="fa fa-phone-square" href="tel:0801619000" type="submit"> ติดต่อเรา</button>
+					<button  class="fa fa-calendar" href="https://liff.line.me/1645278921-kWRPP32q/?accountId=742pucph" type="submit"> ทำการนัดหมาย</button>
+					<button  class="fa fa-phone-square" data-bs-toggle="modal" class="fa fa-phone-square" data-bs-target="#exampleModal"  type="submit"> ติดต่อเรา</button>
 						
+					
 						
 						
 					
@@ -465,7 +448,52 @@
 		</div>
 		
 	</section>
-	
+	<div class="modal fade" id="exampleModal" tabindex="-1"  aria-hidden="true">
+		<div class="ori-signup-modal">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-body">
+						<div class="ori-sign-up-modal-form-area">
+							<button class="close-btn" type="button" data-bs-dismiss="modal" aria-label="Close"><i class="fal fa-times"></i></button>
+							<div class="ori-sign-up-modal-form-content d-flex align-items-center flex-wrap">
+								<div class="ori-sign-up-modal-img position-relative">
+									<img src="assets/img/bg/mbg.png" alt="">
+									
+								</div>
+								<div class="ori-seven-contact-form position-relative">
+									<div class="ori-seven-section-title text-center middle-align headline pera-content">
+										<h2>ติดต่อใช้บริการ</h2>
+										
+									</div>
+									<div class="ori-seven-contact-form-wrap headline pera-content">
+										<form action="/index.html">
+											<div class="input-info position-relative">
+												<label class="d-block">ชื่อผู้ใช้บริการ</label>
+												<input type="text" placeholder="ชื่อ - นามสกุล">
+												<i class="fas fa-user"></i>
+											</div>
+											<div class="input-info position-relative">
+												<label class="d-block">เบอร์ติดต่อ</label>
+												<input type="text" placeholder="xxx-xxx-xxxx">
+												<i class="fas fa-phone-alt"></i>
+											</div>
+											<div class="input-info position-relative">
+												<label class="d-block">สถานที่ใช้บริการ*</label>
+												<input type="text" placeholder="ตำแหน่งที่ใช้บริการ">
+												<i class="fas fa-envelope"></i>
+											</div>
+											<button type="submit">จองคิวบริการ <i class="far fa-long-arrow-right"></i></button>
+											
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<section id="ori-agency-about" class="ori-ageny-about-section">
 		<div class="container">
@@ -748,8 +776,8 @@
 											<div class="col-lg-4 col-md-6">
 												<div class="ori-agency-pricing-item text-center">
 													<img src="assets/img/blog/SET1.png" alt="">
-													<div class="price-btn position-relative">
-														<a href="#ori-agency-team">จองคิวบริการ</a>
+													<div class="ori-banner-form-4 price-btn position-relative">
+														<a data-bs-toggle="modal"  data-bs-target="#exampleModal" href="#ori-agency-team">จองคิวบริการ</a>
 													</div>
 												</div>
 											</div>
@@ -757,7 +785,7 @@
 												<div class="ori-agency-pricing-item text-center">
 													<img src="assets/img/blog/SET2.png" alt="">
 													<div class="price-btn position-relative">
-														<a href="#ori-agency-team">จองคิวบริการ</a>
+														<a data-bs-toggle="modal"  data-bs-target="#exampleModal" href="#ori-agency-team">จองคิวบริการ</a>
 													</div>
 												</div>
 											</div>
@@ -765,7 +793,7 @@
 												<div class="ori-agency-pricing-item text-center">
 													<img src="assets/img/blog/SET3.png" alt="">
 													<div class="price-btn position-relative">
-														<a href="#ori-agency-team">จองคิวบริการ</a>
+														<a data-bs-toggle="modal"  data-bs-target="#exampleModal" href="#ori-agency-team">จองคิวบริการ</a>
 													</div>
 												</div>
 											</div>
@@ -779,7 +807,7 @@
 												<div class="ori-agency-pricing-item text-center">
 													<img src="assets/img/blog/SET4.png" alt="">
 													<div class="price-btn position-relative">
-														<a href="#ori-agency-team">จองคิวบริการ</a>
+														<a data-bs-toggle="modal"  data-bs-target="#exampleModal" href="#ori-agency-team">จองคิวบริการ</a>
 													</div>
 
 											
@@ -903,30 +931,25 @@
 							<div class="ori-agency-contact-title wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
 								<h3>พร้อมให้บริการ ครอบคลุมทุกพื้นที่ รวดเร็วทันใจ</h3>
 							</div>
-							<div class="ori-agency-contact-form wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
-								<form action="#" method="get">
-									<div class="row">
-										<div class="col-md-6">
-											<label><i class="fas fa-user"></i>ชื่อผู้ใช้บริการ</label>
-											<input type="text" name="name" placeholder="ชื่อ-นามสกุล">
-										</div>
-										<div class="col-md-6">
-											<label><i class="fas fa-user"></i>ตำแหน่งที่ใช้บริการ</label>
-											<input type="text" name="name" placeholder="ที่อยู่">
-										</div>
-										<div class="col-md-6">
-											<label><i class="fas fa-envelope"></i>Line</label>
-											<input type="email" name="email" placeholder="ID Line">
-										</div>
-										<div class="col-md-6">
-											<label><i class="fas fa-phone-alt"></i> เบอร์ติดต่อ</label>
-											<input type="email" name="email" placeholder="xxx-xxx-xxxx">
-										</div>
-										
-										<div class="col-md-12">
-											<button>ส่งข้อมูล</button>
-										</div>
+							<div class="ori-seven-contact-form-wrap headline pera-content">
+								<form action="/index.html">
+									<div class="input-info position-relative">
+										<label class="d-block">ชื่อผู้ใช้บริการ</label>
+										<input type="text" placeholder="ชื่อ - นามสกุล">
+										<i class="fas fa-user"></i>
 									</div>
+									<div class="input-info position-relative">
+										<label class="d-block">เบอร์ติดต่อ</label>
+										<input type="text" placeholder="xxx-xxx-xxxx">
+										<i class="fas fa-phone-alt"></i>
+									</div>
+									<div class="input-info position-relative">
+										<label class="d-block">สถานที่ใช้บริการ*</label>
+										<input type="text" placeholder="ตำแหน่งที่ใช้บริการ">
+										<i class="fas fa-envelope"></i>
+									</div>
+									<button type="submit">จองคิวบริการ <i class="far fa-long-arrow-right"></i></button>
+									
 								</form>
 							</div>
 						</div>
