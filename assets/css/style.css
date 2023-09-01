@@ -473,7 +473,7 @@ select:visited {
   padding: 0;
 }
 .ori-signup-modal .close-btn {
-  color: #fff;
+  color: #3c67a3;
   top: 20px;
   right: 20px;
   border: none;
@@ -482,7 +482,7 @@ select:visited {
 }
 
 .ori-sign-up-modal-form-content {
-  background-color: #171717;
+  background-color: #ffffff;
 }
 .ori-sign-up-modal-form-content .brand-logo {
   top: 30px;
@@ -505,8 +505,10 @@ select:visited {
   padding-bottom: 18px;
 }
 .ori-sign-up-modal-form-content .ori-sign-up-modal-form p {
-  color: #BAC1D4;
+  color: #ffffff;
 }
+
+
 .ori-sign-up-modal-form-content .ori-sign-up-modal-form form {
   margin-top: 25px;
 }
@@ -523,25 +525,26 @@ select:visited {
   margin-bottom: 15px;
   padding-bottom: 10px;
   background-color: transparent;
-  border-bottom: 1px solid #393939;
+  border-bottom: 1px solid #ffffff;
 }
 .ori-sign-up-modal-form-content .ori-sign-up-modal-form .ori-signup-account-forget {
   margin: 20px 0px;
 }
 .ori-sign-up-modal-form-content .ori-sign-up-modal-form .keep-login input {
   width: auto;
+  color: #fff;
 }
 .ori-sign-up-modal-form-content .ori-sign-up-modal-form .forgot-pass a {
-  color: var(--base-color-1);
+  color: var(--base-color1);
 }
 .ori-sign-up-modal-form-content .ori-sign-up-modal-form button {
-  color: #000000;
+  color: #ffffff;
   width: 100%;
   border: none;
   font-weight: 700;
   padding: 15px 20px;
   border-radius: 4px;
-  background-color: var(--base-color-1);
+  background-color: var(--base-color1);
 }
 
 /*---------------------------------------------------- */
@@ -3453,6 +3456,7 @@ font-family: 'Mitr', sans-serif;
 }
 
 
+
 .ori-banner-content-4 .ori-banner-text-area .ori-banner-form-4 {
 
   
@@ -6156,8 +6160,7 @@ font-family: 'Mitr', sans-serif;
   padding: 45px 70px;
   border-radius: 5px;
   background-color: #fff;
-  -webkit-box-shadow: 0px 0px 46px 0px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 0px 46px 0px rgba(0, 0, 0, 0.1);
+ 
 }
 .ori-seven-contact-form:after {
   left: 0;
@@ -6174,8 +6177,8 @@ font-family: 'Mitr', sans-serif;
           box-shadow: 0px 0px 46px 0px rgba(0, 0, 0, 0.1);
 }
 .ori-seven-contact-form .ori-seven-section-title h2 {
-  color: #0e0d0f;
-  font-size: 24px;
+  color: #33609e;
+  font-size: 35px;
   font-weight: 700;
   position: relative;
   padding-right: 40px;
@@ -6196,7 +6199,9 @@ font-family: 'Mitr', sans-serif;
   border: 1px solid #eeeeee;
 }
 .ori-seven-contact-form-wrap .input-info label {
+  font-family: 'Kanit', sans-serif;
   font-size: 15px;
+  color: #33609e;
 }
 .ori-seven-contact-form-wrap .input-info input {
   border: none;
@@ -6215,19 +6220,19 @@ font-family: 'Mitr', sans-serif;
   font-weight: 700;
 }
 .ori-seven-contact-form-wrap .input-info input:-ms-input-placeholder {
-  color: #0e0d0f;
-  font-size: 17px;
-  font-weight: 700;
+  font-family: 'Kanit', sans-serif;
+  font-size: 15px;
+  color: #bfc9d7;
 }
 .ori-seven-contact-form-wrap .input-info input::-ms-input-placeholder {
-  color: #0e0d0f;
-  font-size: 17px;
-  font-weight: 700;
+  font-family: 'Kanit', sans-serif;
+  font-size: 15px;
+  color: #bfc9d7;
 }
 .ori-seven-contact-form-wrap .input-info input::placeholder {
-  color: #0e0d0f;
-  font-size: 17px;
-  font-weight: 700;
+  font-family: 'Kanit', sans-serif;
+  font-size: 15px;
+  color: #bfc9d7;
 }
 .ori-seven-contact-form-wrap .input-info i {
   top: 22px;
@@ -6238,17 +6243,17 @@ font-family: 'Mitr', sans-serif;
 .ori-seven-contact-form-wrap button {
   color: #fff;
   border: none;
-  width: 215px;
+  width: 300px;
   height: 55px;
   font-size: 15px;
-  margin-top: 20px;
+  margin-top: 15px;
   font-weight: 700;
-  border-radius: 5px;
+  border-radius: 50px;
   display: inline-block;
   background-size: 200%, 1px;
   -webkit-transition: all 200ms linear 0ms;
   transition: all 200ms linear 0ms;
-  background-color: var(--base-color-7);
+  background-color: var(--base-color-5);
 }
 .ori-seven-contact-form-wrap button:hover {
   background-position: 120%;
@@ -9676,15 +9681,17 @@ Font load
   bottom: -65px;
 }
 .ori-agency-pricing-item .price-btn a {
-  color: #000;
-  padding: 18px 65px;
+  font-size: 25px;
+  font-family: 'Kanit', sans-serif;
+  color: #ffffff;
+  padding: 15px 55px;
   border-radius: 40px;
   display: inline-block;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  background-color: rgb(255, 255, 255);
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  background-color: #61b94b;
 }
 .ori-agency-pricing-item .price-btn a:hover {
-  background-color: var(--base-color);
+  background-color: var(--base-color-1);
 }
 
 /*---------------------------------------------------- */
@@ -9744,6 +9751,7 @@ Font load
 }
 .ori-agency-contact-form label i {
   margin-right: 8px;
+  color: #000000;
 }
 .ori-agency-contact-form input, .ori-agency-contact-form textarea {
   width: 100%;
@@ -9757,7 +9765,7 @@ Font load
   height: 120px;
 }
 .ori-agency-contact-form button {
-  color: #fff;
+  color: #000000;
   width: 100%;
   border: none;
   padding: 15px;
@@ -9768,7 +9776,7 @@ Font load
   transition: 500ms all ease;
 }
 .ori-agency-contact-form button:hover {
-  color: #fff;
+  color: #000000;
   background-color: #000;
 }
 
@@ -10002,7 +10010,7 @@ Font load
   color: #fff;
   margin-top: 80px;
   padding: 25px 0px;
-  border-top: 1px solid #15152e;
+  border-top: 2px solid #61b94b;
 }
 
 /*---------------------------------------------------- */
