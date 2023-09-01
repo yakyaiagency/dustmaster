@@ -1386,8 +1386,8 @@ select:visited {
   padding: 10px 30px 10px 0;
 }
 .mobile_menu_content .m-brand-logo {
-  width: 120px;
-  margin: 50px auto;
+  width: 220px;
+  margin: 80px auto;
 }
 
 .mobile_menu_wrap.mobile_menu_on .mobile_menu_content {
@@ -3877,7 +3877,7 @@ font-family: 'Mitr', sans-serif;
   border-radius: 30px;
   white-space: nowrap;
   display: inline-block;
-  background-color: #F6F8FC;
+  background-color: #3c67a3;
 }
 .ori-price-plan-item .ori-price-btn a:hover {
   color: #fff;
@@ -9776,7 +9776,7 @@ Font load
 /*Footer area*/
 /*----------------------------------------------------*/
 .ori-agency-footer-section-3 {
-  background-color: #000018;
+  background-color: #3c67a3;
   border-top: 5px solid var(--base-color);
 }
 .ori-agency-footer-section-3 .ori-agency-newslatter-section-3 {
@@ -9832,7 +9832,7 @@ Font load
   padding-bottom: 18px;
 }
 .ori-agency-footer-content-wrap-3 .ori-agency-footer-widget .ori-agency-footer-logo-widget p {
-  color: #9d9d9d;
+  color: #ffffff;
   padding-bottom: 35px;
 }
 .ori-agency-footer-content-wrap-3 .ori-agency-footer-widget .ori-agency-footer-logo-widget .footer-logo-btn {
@@ -9857,7 +9857,7 @@ Font load
   background-color: #fff;
 }
 .ori-agency-footer-content-wrap-3 .ori-agency-footer-widget .ori-agency-footer-newslatter-widget p {
-  color: #9d9d9d;
+  color: #ffffff;
 }
 .ori-agency-footer-content-wrap-3 .ori-agency-footer-widget .ori-agency-footer-newslatter-widget form {
   margin-top: 30px;
@@ -9868,7 +9868,7 @@ Font load
   width: 100%;
   padding-left: 20px;
   border-radius: 15px;
-  border: 2px solid #313131;
+  border: 2px solid #61b94b;
   background-color: transparent;
 }
 .ori-agency-footer-content-wrap-3 .ori-agency-footer-widget .ori-agency-footer-newslatter-widget input::-webkit-input-placeholder {
@@ -9916,7 +9916,7 @@ Font load
   margin-right: 15px;
 }
 .ori-agency-footer-content-wrap-3 .ori-agency-footer-widget .ori-agency-footer-newslatter-widget .ori-agency-footer-social li a {
-  color: #494949;
+  color: #ffffff;
   -webkit-transition: 0.3s all ease-in-out;
   transition: 0.3s all ease-in-out;
 }
@@ -9934,7 +9934,7 @@ Font load
   margin-right: 10px;
 }
 .ori-agency-footer-content-wrap-3 .ori-agency-footer-widget .ori-agency-footer-info-widget a {
-  color: #9d9d9d;
+  color: #ffffff;
   display: block;
   font-size: 14px;
   overflow: hidden;
@@ -9953,7 +9953,7 @@ Font load
 }
 .ori-agency-footer-content-wrap-3 .ori-agency-footer-widget .ori-agency-footer-info-widget .office-open-hour p {
   font-size: 14px;
-  color: #9d9d9d;
+  color: #ffffff;
   max-width: 180px;
 }
 .ori-agency-footer-content-wrap-3 .ori-agency-footer-widget .gallery-widget li {
