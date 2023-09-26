@@ -646,7 +646,7 @@ select:visited {
 }
 .ori-main-navigation-area .dropdown:after {
   top: 2px;
-  color: #ffb900;
+  color: #3c67a3;
   right: -14px;
   content: "\f107";
   font-size: 20px;
@@ -678,7 +678,7 @@ select:visited {
   border-radius: 0;
   position: absolute;
   opacity: 0;
-  background: #000000;
+  background: #ffffff;
   border-radius: 2px;
   -webkit-transform: scaleY(0);
           transform: scaleY(0);
@@ -726,19 +726,19 @@ select:visited {
   display: block;
   position: relative;
   padding: 10px 30px !important;
-  color: #fff !important;
+  color: #61b94b !important;
   font-weight: 600 !important;
-  font-size: 14px !important;
+  font-size: 18px !important;
 }
 .ori-main-navigation-area .dropdown-menu a:before {
   display: none;
 }
 .ori-main-navigation-area .dropdown-menu a:hover {
-  color: var(--base-color-1) !important;
+  color: var(--base-color) !important;
 }
 
 .ori-header-sidebar-search button {
-  color: #fff;
+  color: #3c67a3;
   border: none;
   font-size: 25px;
   background-color: transparent;
@@ -765,7 +765,7 @@ select:visited {
   transition: 500ms all ease;
 }
 .ori-header-login-signup .ori-login-btn button {
-  background-color: #292F3F;
+  background-color: #ffffff;
 }
 .ori-header-login-signup .ori-login-btn button:hover {
   background-color: #00AC83;
@@ -941,7 +941,7 @@ select:visited {
   margin-top: -540px;
   -webkit-transform: translateY(-110%);
           transform: translateY(-110%);
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(255, 255, 255, 0.9);
   -webkit-transition: all 1500ms cubic-bezier(0.86, 0, 0.07, 1);
   transition: all 1500ms cubic-bezier(0.86, 0, 0.07, 1);
   -webkit-transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
@@ -3436,6 +3436,15 @@ font-family: 'Mitr', sans-serif;
   max-width: 940px;
 }
 .ori-banner-content-4 .ori-banner-text-area h1 {
+  
+  color: #ffffff;
+  font-size: 72px;
+  font-weight: 800;
+  line-height: 90px;
+  padding-bottom: 40px;
+}
+
+.ori-banner-content-4 .ori-banner-text-area h2 {
   
   color: #ffffff;
   font-size: 72px;
@@ -6509,7 +6518,7 @@ font-family: 'Mitr', sans-serif;
 /*----------------------------------------------------*/
 .ori-footer-cta-section-7 {
   padding: 130px 0px 125px;
-  background-color: #12162d;
+  background-color: #3c67a3;
 }
 .ori-footer-cta-section-7 .container {
   max-width: 1470px;
@@ -6530,11 +6539,11 @@ font-family: 'Mitr', sans-serif;
   left: 0;
   right: 0;
   content: "";
-  width: 1px;
+  width: 3px;
   height: 100%;
   margin: 0 auto;
   position: absolute;
-  background-color: #262a3b;
+  background-color: #ffffff;
 }
 
 /*---------------------------------------------------- */
@@ -6553,10 +6562,11 @@ font-family: 'Mitr', sans-serif;
   font-weight: 700;
   line-height: 60px;
   padding-bottom: 12px;
+  color: var(--base-color3);
 }
 .ori-breadcrumb-content li {
   color: #fff;
-  font-size: 15px;
+  font-size: 25px;
   font-weight: 700;
   margin: 0px 12px;
   position: relative;
@@ -6565,10 +6575,10 @@ font-family: 'Mitr', sans-serif;
 }
 .ori-breadcrumb-content li:before {
   top: 0;
-  right: -20px;
+  right: -30px;
   content: "//";
   position: absolute;
-  color: var(--base-color-1);
+  color: var(--base-color-5);
 }
 .ori-breadcrumb-content li:last-child:before {
   display: none;
@@ -8130,7 +8140,7 @@ font-family: 'Mitr', sans-serif;
   width: 230px;
   height: 60px;
   font-size: 18px;
-  background-color: transparent;
+  background-color: #dfdfdf;
   border-bottom: 1px solid #393939;
 }
 .ori-shop-top-filter-bar .ori-shop-select select option {
@@ -8156,20 +8166,27 @@ font-family: 'Mitr', sans-serif;
   padding: 0px 15px;
   line-height: 30px;
   border-radius: 5px;
-  background-color: var(--base-color-1);
+  background-color: var(--base-color-10);
 }
 .ori-shop-inner-item .shop-img img {
   -webkit-transition: 500ms all ease;
   transition: 500ms all ease;
 }
 .ori-shop-inner-item .shop-text h3 {
-  color: #fff;
-  font-size: 18px;
+  color: #3c67a3;
+  font-size: 25px;
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+.ori-shop-inner-item .shop-text h2 {
+  color: #bb0404;
+  font-size: 20px;
   font-weight: 700;
   padding-bottom: 10px;
 }
 .ori-shop-inner-item .shop-text .pro_price {
   font-size: 18px;
+  color: #76869d;
 }
 .ori-shop-inner-item .add-cart-btn {
   opacity: 0;
@@ -8201,6 +8218,7 @@ font-family: 'Mitr', sans-serif;
 .ori-shop-sidebar-widget {
   padding-left: 10px;
   margin-bottom: 55px;
+  color: #3c67a3;
 }
 .ori-shop-sidebar-widget .widget-title {
   padding-bottom: 35px;
@@ -8246,6 +8264,7 @@ font-family: 'Mitr', sans-serif;
 }
 .ori-shop-sidebar-widget .category-widget li a {
   position: relative;
+  color: #3c67a3;
 }
 .ori-shop-sidebar-widget .category-widget li a:before {
   top: 0;
@@ -8310,7 +8329,7 @@ font-family: 'Mitr', sans-serif;
   width: 50%;
   padding: 0;
   border: none;
-  color: #BAC1D4;
+  color: #232323;
   background: none;
   margin-top: 20px;
   font-size: 18px;
@@ -8369,22 +8388,23 @@ font-family: 'Mitr', sans-serif;
   font-size: 18px;
   font-weight: 700;
   padding-bottom: 10px;
+  color: #61b94b;
 }
 .ori-shop-sidebar-widget .best-seller-widget .best-seller-item .best-sell-text .pro_price {
   font-size: 18px;
 }
 .ori-shop-sidebar-widget .tag-widget li a {
-  color: #959595;
+  color: #ffffff;
   font-size: 14px;
   padding: 5px 15px;
   border-radius: 3px;
   margin-right: 5px;
   margin-bottom: 10px;
   display: inline-block;
-  background-color: #2E2E2E;
+  background-color: #3c67a3;
 }
 .ori-shop-sidebar-widget .tag-widget li a:hover {
-  color: #fff;
+  color: #3c67a3;
 }
 
 /*---------------------------------------------------- */
@@ -8414,27 +8434,51 @@ font-family: 'Mitr', sans-serif;
 .ori-shop-details-text-wrapper .ori-shop-details-title h3 {
   font-size: 35px;
   font-weight: 700;
-  padding-bottom: 15px;
+  padding-bottom: 10px;
+  color: #3c67a3;
+
+}
+
+.ori-shop-details-text-wrapper .ori-shop-details-title h4 {
+  font-size: 25px;
+  font-weight: 600;
+  padding-bottom: 10px;
+  color: #c92b2b;
+
 }
 .ori-shop-details-text-wrapper .ori-shop-details-title span {
-  font-size: 24px;
+  font-size: 50px;
   font-weight: 700;
+  color: #61b94b;
+
 }
 .ori-shop-details-text-wrapper .ori-shop-details-desc {
-  color: #BAC1D4;
+  font-family: 'Kanit', sans-serif;
+	font-family: 'Mitr', sans-serif;
+  color: #1e2a42;
+  font-size: 18px;
+  max-width: 500px;
+  line-height: 30px;
+  margin-bottom: 50px;
+}
+
+.ori-shop-details-text-wrapper .ori-shop-details-desc h4 {
+  font-family: 'Kanit', sans-serif;
+	font-family: 'Mitr', sans-serif;
+  color: #c92b2b;
   font-size: 18px;
   max-width: 500px;
   line-height: 30px;
   margin-bottom: 50px;
 }
 .ori-shop-details-text-wrapper .ori-code-category li {
-  color: #BAC1D4;
+  color: #61b94b;
   font-size: 18px;
   margin-bottom: 15px;
   text-transform: capitalize;
 }
 .ori-shop-details-text-wrapper .ori-code-category li span {
-  color: #fff;
+  color: #1e2a42;
   font-size: 15px;
   font-weight: 700;
   letter-spacing: 0.14em;
@@ -8453,9 +8497,9 @@ font-family: 'Mitr', sans-serif;
 .ori-cart-content-table .quantity-field input {
   width: 120px;
   height: 50px;
-  color: #fff;
+  color: #1e2a42;
   border-radius: 3px;
-  border: 0.5px solid #FFFFFF;
+  border: 0.5px solid #1e2a42;
   background-color: transparent;
 }
 .ori-shop-quantity-btn .quantity-field .custom-next,
@@ -8463,7 +8507,7 @@ font-family: 'Mitr', sans-serif;
 .ori-cart-content-table .quantity-field .custom-next,
 .ori-cart-content-table .quantity-field .custom-prev {
   top: 50%;
-  color: #fff;
+  color: #1e2a42;
   cursor: pointer;
   font-size: 20px;
   margin: 0px 5px;
@@ -8499,12 +8543,15 @@ font-family: 'Mitr', sans-serif;
 }
 
 .ori-shop-details-review-content {
+  font-family: 'Kanit', sans-serif;
+	font-family: 'Mitr', sans-serif;
+
   margin-top: 115px;
 }
 .ori-shop-details-review-content .shop-review-tab-btn {
   margin-bottom: 40px;
   padding-bottom: 20px;
-  border-bottom: 2px solid #393939;
+  border-bottom: 2px solid #1f2e47;
 }
 .ori-shop-details-review-content .shop-review-tab-btn .nav-tabs {
   border-bottom: none;
@@ -8517,16 +8564,16 @@ font-family: 'Mitr', sans-serif;
 }
 .ori-shop-details-review-content .shop-review-tab-btn .nav-tabs .nav-link {
   padding: 0;
-  color: #fff;
+  color: #1f2e47;
   font-size: 24px;
   border-radius: 0;
 }
 .ori-shop-details-review-content .shop-review-tab-btn .nav-tabs .nav-link .buyer-review-rate {
   margin-left: 10px;
-  color: var(--base-color-1);
+  color: var(--base-color-9);
 }
 .ori-shop-details-review-content .shop-review-tab-btn .nav-tabs .nav-link.active {
-  color: #fff;
+  color: #61b94b;
   position: relative;
   background-color: transparent;
 }
@@ -8540,7 +8587,7 @@ font-family: 'Mitr', sans-serif;
   background-color: var(--base-color-1);
 }
 .ori-shop-details-review-content .shop-details-description-text {
-  color: #BAC1D4;
+  color: #606060;
   font-size: 18px;
   line-height: 30px;
 }
@@ -8560,7 +8607,7 @@ font-family: 'Mitr', sans-serif;
   overflow: hidden;
 }
 .ori-shop-details-review-content .review-comment-area .buyer-review-text h4 {
-  color: #fff;
+  color: #BAC1D4;
   font-size: 20px;
   font-weight: 700;
   padding-bottom: 10px;
@@ -8576,7 +8623,7 @@ font-family: 'Mitr', sans-serif;
 }
 .ori-shop-details-review-content .review-comment-area .buyer-review-text .buyer-review-rate a {
   font-size: 14px;
-  color: var(--base-color-1);
+  color: var(--base-color-9);
 }
 .ori-shop-details-review-content .review-comment-area .buyer-review-text .buyer-review-date {
   color: #BAC1D4;
@@ -8595,7 +8642,7 @@ font-family: 'Mitr', sans-serif;
 .ori-shop-details-review-content .review-comment-area .buyer-review-comment-box {
   padding: 40px;
   border-radius: 20px;
-  background-color: #171717;
+  background-color: #e9e9e9;
 }
 .ori-shop-details-review-content .review-comment-area .buyer-review-comment-box .customer-rate-option {
   margin: 4px 0px 20px;
@@ -8620,7 +8667,7 @@ font-family: 'Mitr', sans-serif;
 }
 .ori-shop-details-review-content .review-comment-area .buyer-review-comment-box .customer-rate-option .customer-rate:checked ~ .rate-value:before {
   content: "\f005";
-  color: var(--base-color-1);
+  color: var(--base-color-9);
 }
 .ori-shop-details-review-content .review-comment-area .buyer-review-comment-box h4 {
   font-size: 18px;
@@ -8628,6 +8675,8 @@ font-family: 'Mitr', sans-serif;
   padding-right: 20px;
   letter-spacing: 0.14em;
   text-transform: uppercase;
+  color: var(--base-color-1);
+  
 }
 .ori-shop-details-review-content .review-comment-area .buyer-review-comment-box textarea,
 .ori-shop-details-review-content .review-comment-area .buyer-review-comment-box input {
@@ -8658,8 +8707,8 @@ font-family: 'Mitr', sans-serif;
   margin-bottom: 40px;
 }
 .ori-shop-faq-item h3 {
-  color: #fff;
-  font-size: 24px;
+  color: #3c67a3;
+  font-size: 20px;
   font-weight: 700;
   padding-bottom: 20px;
 }
@@ -8668,7 +8717,7 @@ font-family: 'Mitr', sans-serif;
   padding-top: 100px;
 }
 .ori-shop-related-product h3 {
-  color: #fff;
+  color: #3c67a3;
   font-size: 35px;
   font-weight: 700;
   padding-bottom: 40px;
@@ -9276,6 +9325,8 @@ Font load
 .ori-ageny-about-section {
   padding: 80px 0px;
   background-color: #ffffff;
+
+  
 }
 
 .ori-agency-about-counter {
@@ -9783,6 +9834,13 @@ Font load
 /*---------------------------------------------------- */
 /*Footer area*/
 /*----------------------------------------------------*/
+.ori-agency-footer-section-4 {
+  background-color: #ffffff;
+  border-top: 5px solid var(--base-color7);
+}
+
+
+
 .ori-agency-footer-section-3 {
   background-color: #3c67a3;
   border-top: 5px solid var(--base-color);
@@ -10611,7 +10669,7 @@ Font load
 /*----------------------------------------------------*/
 .ori-footer-section {
   padding-top: 100px;
-  background-color: #171717;
+  background-color: #3c67a3;
 }
 .ori-footer-section.footer-style-two {
   padding-top: 120px;
@@ -13668,15 +13726,15 @@ Font load
   overflow: hidden;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1080px) {
   .hero {
-    height: 40vh;
+    height: 80vh;
   }
 
   .custom-video,
   .news-detail-image {
-    object-fit: cover;
-    width: 100vw;
+    
+    width: 20vw;
     height: 100vh;
   }
 
@@ -13697,10 +13755,63 @@ Font load
 }
 
 .custom-video {
-  position: absolute;
+  
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 50%;
+  height: 50%;
 }
 
+
+
+.images-container {
+  width: 90%;
+  text-align: center;
+  margin: 60px auto 60px;
+}
+.container-enlarge {
+    display: inline-block;
+    position: relative;
+    z-index: 0;
+    margin: 15px;
+}
+.container-enlarge > img {
+    height: auto;
+    max-width: 100%;
+    width: 150px;
+    border-radius: 5px;
+}
+.container-enlarge span {
+    position: absolute;
+    top: -9999em;
+    left: -9999em;
+}
+.container-enlarge:hover span {
+    top: -320px;
+    left: -75px;
+    width: 300px;
+}
+
+
+
+.zoom-area { 
+  max-width: 1920px;
+  margin: 50px auto 80px;
+  font-size: 19px;
+  color: #999;
+}
+.link-container {
+  text-align: center;
+}
+a.more-link {
+    font-family: 'Source Sans Pro', Helvetica, sans-serif;
+    background-color: #4CAF50;
+    padding: 8px 10px;
+    border-radius: 0;
+    color: #fff;
+    display: inline-block;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    line-height: 1.5;
+    text-decoration: none;
+}
