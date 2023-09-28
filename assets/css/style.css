@@ -6260,8 +6260,7 @@ font-family: 'Mitr', sans-serif;
   border-radius: 50px;
   display: inline-block;
   background-size: 200%, 1px;
-  -webkit-transition: all 200ms linear 0ms;
-  transition: all 200ms linear 0ms;
+
   background-color: var(--base-color-5);
 }
 .ori-seven-contact-form-wrap button:hover {
@@ -9643,8 +9642,8 @@ Font load
   margin-top: 60px;
   border-radius: 45px;
   background-color: #fff;
-  -webkit-box-shadow: -12.803px 2.257px 250px 0px rgba(85, 85, 85, 0.29);
-          box-shadow: -12.803px 2.257px 250px 0px rgba(85, 85, 85, 0.29);
+  -webkit-box-shadow: #e7e7e9;
+          box-shadow: #3c67a3;
 }
 .ori-agency-price-tab-btn .nav-pills .nav-link {
   font-size: 20px;
@@ -13815,3 +13814,5 @@ a.more-link {
     line-height: 1.5;
     text-decoration: none;
 }
+
+
