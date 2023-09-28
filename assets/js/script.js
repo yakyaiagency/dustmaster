@@ -1404,4 +1404,102 @@ Last change:    00/00/00
 		}
 	  }
 
+	  
+
+
 })();
+
+(function($) {
+	showSwal = function(type) {
+	  'use strict';
+	   if (type === 'success-message') {
+		swal({
+		  title: 'ทำการนัดหมายสำเร็จ',
+		  text: 'ขอขอบคุณที่ไว้ใจเรา',
+		  type: 'success',
+		  button: {
+			text: "Continue",
+			value: true,
+			visible: true,
+			className: "btn btn-primary"
+		  }
+		})
+
+		setTimeout(function() {
+			window.location.reload();
+		  }, 2000);
+  
+	  }else{
+		  swal("Error occured !");
+	  } 
+
+	  
+	  
+	}
+	
+  
+})(jQuery);
+
+(function($) {
+	showSwal2 = function(type) {
+	  'use strict';
+	   if (type === 'success-message2') {
+		swal({
+		  title: 'ทำการนัดหมายสำเร็จ',
+		  text: 'ขอขอบคุณที่ไว้ใจเรา',
+		  type: 'success',
+		  button: {
+			text: "Continue",
+			value: true,
+			visible: true,
+			className: "btn btn-primary"
+		  }
+		})
+
+		setTimeout(function() {
+			window.location.reload();
+		  }, 2000);
+  
+	  }else{
+		  swal("Error occured !");
+	  } 
+
+	  
+	  
+	}
+	
+  
+})(jQuery);
+
+
+(function($) {
+	showSwalA = function(type) {
+	  'use strict';
+	   if (type === 'success-messageA') {
+		swal({
+		  title: 'ทำการนัดหมายสำเร็จ',
+		  text: 'ขอขอบคุณที่ไว้ใจเรา',
+		  type: 'success',
+		  button: {
+			text: "Continue",
+			value: true,
+			visible: true,
+			className: "btn btn-primary"
+		  }
+		})
+
+		setTimeout(function() {
+			window.location.reload();
+		  }, 2000);
+  
+	  }else{
+		  swal("Error occured !");
+	  } 
+
+	  
+	  
+	}
+	
+  
+})(jQuery);
+  
