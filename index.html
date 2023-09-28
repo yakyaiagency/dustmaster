@@ -21,7 +21,8 @@
 	<link rel="stylesheet" href="assets/css/style.css">
 	<link rel="stylesheet" href="assets/css/templatemo.css">
 	
-	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
 
 
 	
@@ -292,9 +293,11 @@
 												<input type="text" placeholder="ตำแหน่งที่ใช้บริการ">
 												<i class="fas fa-envelope"></i>
 											</div>
-											<button type="submit">จองคิวบริการ <i class="far fa-long-arrow-right"></i></button>
+											
 											
 										</form>
+										<button class="btn btn-outline-success" onclick="showSwal('success-message')">จองคิวบริการ</button>
+										
 									</div>
 								</div>
 							</div>
@@ -817,9 +820,10 @@
 										<input type="text" placeholder="ตำแหน่งที่ใช้บริการ">
 										<i class="fas fa-envelope"></i>
 									</div>
-									<button type="submit">จองคิวบริการ <i class="far fa-long-arrow-right"></i></button>
+								
 									
 								</form>
+								<button class="btn btn-outline-success" onclick="showSwal2('success-message2')">จองคิวบริการ</button>
 							</div>
 						</div>
 					</div>
