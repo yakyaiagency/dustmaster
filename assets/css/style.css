@@ -1030,7 +1030,7 @@ select:visited {
   height: 70px;
   width: 100%;
   padding: 10px 30px;
-  background-color: #ffffff;
+  background-color: #000000;
   -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
   font-weight: 500;
@@ -1351,7 +1351,7 @@ select:visited {
   position: fixed;
   width: 310px;
   overflow-y: scroll;
-  background-color: #000;
+  background-color: #ffffff;
   padding: 20px 35px 35px 35px;
   -webkit-box-shadow: 0px 3px 5px rgba(100, 100, 100, 0.19);
           box-shadow: 0px 3px 5px rgba(100, 100, 100, 0.19);
@@ -1381,10 +1381,10 @@ select:visited {
 .mobile_menu_content .mobile-main-navigation .navbar-nav li a {
   padding: 0;
   width: 100%;
-  color: #fff;
+  color: #3c67a3;
   display: block;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 20px;
   text-transform: uppercase;
   padding: 10px 30px 10px 0;
 }
@@ -1409,7 +1409,7 @@ select:visited {
   height: 120vh;
   opacity: 0;
   visibility: hidden;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(211, 211, 211, 0.9);
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
@@ -6207,6 +6207,23 @@ font-family: 'Mitr', sans-serif;
   border-radius: 5px;
   border: 1px solid #eeeeee;
 }
+
+
+.ori-seven-contact-form-wrap .input-info option {
+  color: #33609e;
+  font-size: 20px;
+  font-weight: 200;
+
+}
+
+.ori-seven-contact-form-wrap .input-info select {
+  color: #33609e;
+  font-size: 20px;
+  font-weight: 700;
+
+}
+
+
 .ori-seven-contact-form-wrap .input-info label {
   font-family: 'Kanit', sans-serif;
   font-size: 15px;
@@ -6221,11 +6238,11 @@ font-family: 'Mitr', sans-serif;
 .ori-seven-contact-form-wrap .input-info input::-webkit-input-placeholder {
   color: #0e0d0f;
   font-size: 17px;
-  font-weight: 700;
+  font-weight: 200;
 }
 .ori-seven-contact-form-wrap .input-info input::-moz-placeholder {
   color: #0e0d0f;
-  font-size: 17px;
+  font-size: 20px;
   font-weight: 700;
 }
 .ori-seven-contact-form-wrap .input-info input:-ms-input-placeholder {
@@ -6235,7 +6252,7 @@ font-family: 'Mitr', sans-serif;
 }
 .ori-seven-contact-form-wrap .input-info input::-ms-input-placeholder {
   font-family: 'Kanit', sans-serif;
-  font-size: 15px;
+  font-size: 30px;
   color: #bfc9d7;
 }
 .ori-seven-contact-form-wrap .input-info input::placeholder {
@@ -8178,6 +8195,13 @@ font-family: 'Mitr', sans-serif;
   padding-bottom: 10px;
 }
 .ori-shop-inner-item .shop-text h2 {
+  color: #bb0404;
+  font-size: 20px;
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+
+.ori-shop-inner-item .shop-text h5 {
   color: #bb0404;
   font-size: 20px;
   font-weight: 700;
