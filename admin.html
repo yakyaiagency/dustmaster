@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+	<title>DustMasterThailand - บริการดูดไร้ฝุ่น </title>
+  <!-- base:css -->
+  <link rel="stylesheet" href="/admin/template/vendors/typicons/typicons.css">
+  <link rel="stylesheet" href="/admin/template/vendors/css/vendor.bundle.base.css">
+  <!-- endinject -->
+  <!-- plugin css for this page -->
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="/admin/template/css/vertical-layout-light/style.css">
+  <!-- endinject -->
+  <link rel="shortcut icon" href="/admin/template/images/favicon.png">
+  <link rel="stylesheet" href="/admin/manage/css/style.css">
+  <script src="/SignUp/js/sweetalert2.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+
+  
+ 
+  <div class="container-scroller">
+    <!-- partial:partials/_navbar.html -->
+    <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+      <div class="navbar-brand-wrapper d-flex justify-content-center">
+        <div class="navbar-brand-inner-wrapper d-flex justify-content-between align-items-center w-100">
+          <a class="navbar-brand brand-logo" href="index.html"><img src="/assets/img/agency/logo/f-logo.png" alt="logo"/></a>
+          <a class="navbar-brand brand-logo-mini" href="index.html"><img src="/admin/template/images/favicon.png" alt="logo"/></a>
+          <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+            <span class="typcn typcn-th-menu"></span>
+          </button>
+        </div>
+      </div>
+      <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
+        <ul class="navbar-nav mr-lg-2">
+          <li class="nav-item nav-profile dropdown">
+            <a class="nav-link" href="#" data-toggle="dropdown" id="profileDropdown">
+              <img src="/admin/template/images/faces/face5.jpg" alt="profile"/>
+              <span class="nav-profile-name">Welcome to Admin DustMasterThailand</span>
+            </a>
+            
+          </li>
+         
+        </ul>
+
+        
+        <ul class="navbar-nav navbar-nav-right">
+          <li class="nav-item nav-date dropdown">
+            <a class="nav-link d-flex justify-content-center align-items-center" href="javascript:;">
+
+              
+              <h6 class="date mb-0">วันที่ :</h6>
+              <i class="typcn typcn-calendar"></i>
+
+              <http-equiv="Content-Type" content="text/html; charset=utf-8" />
+              <script>
+              var date = new Date();
+              document.write( 
+              date.getDate() + "-" + 
+              (parseInt(date.getMonth())+1) + "-" + 
+              date.getFullYear() 
+              );
+              </script>
+
+              
+            </a>
+           
+           
+
+
+
+
+            <li></li>
+
+            
+
+            <li class="nav-item dropdown">
+              <a class="nav-link count-indicator dropdown-toggle d-flex justify-content-center align-items-center" id="messageDropdown" href="#" data-toggle="dropdown">
+                <i class="typcn typcn-cog-outline mx-0"></i>
+                
+              </a>
+              <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="messageDropdown">
+              
+              
+                <a class="dropdown-item">
+                  
+                  
+
+                  <div class="preview-item-content flex-grow">
+                    <button type="button" class="btn btn-danger"onclick="signOut()" >ออกจากระบบ</button>
+                  </div>
+                </a>
+              
+              </div>
+            </li>
+            
+          </ul>
+
+
+
+         
+       
+        </div>
+
+        
+  
+    </nav>
+
+    
+    <!-- partial -->
+
+    <div class="container-fluid page-body-wrapper">
+      <!-- partial:partials/_settings-panel.html -->
+      
+     
+      <!-- partial -->
+      <!-- partial:partials/_sidebar.html -->
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">
+              <i class="typcn typcn-device-desktop menu-icon"></i>
+              <span class="menu-title">รายการจองคิว</span>
+              <div class="badge badge-danger">สำคัญ</div>
+            </a>
+
+
+            
+          </li>
+          
+
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#form-elements" aria-expanded="false" aria-controls="form-elements">
+              <i class="typcn typcn-film menu-icon"></i>
+              <span class="menu-title">Admin Settings</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="form-elements">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"><a class="nav-link" href="/admin/template/index2.html">Settings</a></li>
+              </ul>
+            </div>
+          </li>
+
+         
+
+
+
+        </ul>
+      </nav>
+      <!-- partial -->
+      <div class="main-panel">
+        <div class="content-wrapper">
+
+          
+              
+           
+          
+            
+            
+
+          <div class="row">
+            <div class="col-md-4 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <div class="d-flex align-items-center justify-content-between justify-content-md-center justify-content-xl-between flex-wrap mb-4">
+                    <div>
+                      <p class="mb-2 text-md-center text-lg-left">รายการจองคิว</p>
+                      <h1 class="count">0</h1>
+                     
+                    </div>
+                    <i class="typcn typcn-briefcase icon-xl text-secondary"></i>
+                  </div>
+                  <canvas id="expense-chart" height="80"></canvas>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <div class="d-flex align-items-center justify-content-between justify-content-md-center justify-content-xl-between flex-wrap mb-4">
+                    <div>
+                      <p class="mb-2 text-md-center text-lg-left">ผลตอบรับ</p>
+                      <h1 class="mb-0">45</h1>
+                    </div>
+                    <i class="typcn typcn-chart-pie icon-xl text-secondary"></i>
+                  </div>
+                  <canvas id="budget-chart" height="80"></canvas>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <div class="d-flex align-items-center justify-content-between justify-content-md-center justify-content-xl-between flex-wrap mb-4">
+                    <div>
+                      <p class="mb-2 text-md-center text-lg-left">ยอดบริการ</p>
+                      <h1 class="mb-0">0</h1>
+                    </div>
+                    <i class="typcn typcn-clipboard icon-xl text-secondary"></i>
+                  </div>
+                  <canvas id="balance-chart" height="80"></canvas>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+          
+						<a href="#addEmployeeModal" class="btn btn-info" data-toggle="modal"><i
+								class="material-icons"></i> <span>เพิ่มรายการจองคิว</span></a>
+						<a href="#deleteEmployeeModal" class="btn btn-danger" data-toggle="modal"><i
+								class="material-icons"></i> <span>ลบรายการ</span></a>
+              </div>
+            </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="card">
+                <div class="table-responsive pt-3">
+                  <table id="employee-table" class="table table-striped table-hover">
+                    <thead>
+                      <tr>
+                        <th>
+                          <span class="custom-checkbox">
+                            <input type="checkbox" id="selectAll">
+                            <label for="selectAll"></label>
+                          </span>
+                        </th>
+                        
+                        <th>ชื่อผู้จองคิว</th>
+                        <th>รายการจองคิว</th>
+                        <th>ที่อยู่บริการ</th>
+                        <th>เบอร์โทรศัพท์</th>
+                        <th>ตั้งค่า</th>
+                      </tr>
+                    </thead>
+
+                    
+                    <tbody>
+                    </tbody>
+                  </table>
+
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+        <!-- Edit Modal HTML -->
+
+        <div id="addEmployeeModal" class="modal fade" data-backdrop="static" data-keyboard="false">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <form id="add-employee-form">
+                <div class="modal-header">
+                  <h4 class="modal-title">เพิ่มรายการคิวจอง</h4>
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                </div>
+                <div class="modal-body">
+                  <div class="form-group">
+                    <label>ชื่อผู้จองคิว</label>
+                    <input type="text" id="employee-name" class="form-control" required>
+                  </div>
+                  <div class="input-info position-relative">
+												
+												
+                    <div class="form-group row">
+                      <label class="col-sm-3 col-form-label">แพ็คเกจ</label>
+                      <div class="col-sm-9">
+                        <select id="employee-email"class="form-control">
+                        
+                        <option>SET-A</option>
+                        <option>SET-B</option>
+                        <option>SET-C</option>
+                        <option>SET-D</option>
+                        </select>
+                      </div>
+                      </div>
+                    
+                  </div>
+                  <div class="form-group">
+                    <label>ที่อยู่บริการ</label>
+                    <textarea id="employee-address" class="form-control" required></textarea>
+                  </div>
+                  <div class="form-group">
+                    <label>เบอร์โทรศัพท์</label>
+                    <input type="text" id="employee-phone" class="form-control" required>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
+                  <input type="submit" class="btn btn-success" value="เพิ่มรายการคิวจอง">
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+	
+	<!-- Edit Modal HTML -->
+	<div id="editEmployeeModal" class="modal fade" data-backdrop="static" data-keyboard="false">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<form id="edit-employee-form">
+					<div class="modal-header">
+						<h4 class="modal-title">แก้ไขรายการ</h4>
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					</div>
+					<div class="modal-body">
+						<div class="form-group">
+							<label>ชื่อผู้จองคิว</label>
+							<input type="text" id="employee-name" class="form-control" required>
+						</div>
+						<div class="input-info position-relative">
+												
+												
+              <div class="form-group row">
+                <label class="col-sm-3 col-form-label">แพ็คเกจ</label>
+                <div class="col-sm-9">
+                  <select id="employee-email"class="form-control">
+                  
+                    <option>SET-A</option>
+                    <option>SET-B</option>
+                    <option>SET-C</option>
+                    <option>SET-D</option>
+                  </select>
+                </div>
+                </div>
+              
+            </div>
+						<div class="form-group">
+							<label>ที่อยู่บริการ</label>
+							<textarea id="employee-address" class="form-control" required></textarea>
+						</div>
+						<div class="form-group">
+							<label>เบอร์โทรศัพท์</label>
+							<input type="text" id="employee-phone" class="form-control" required>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
+						<input type="submit" class="btn btn-info" value="Save">
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- Delete Modal HTML -->
+	<div id="deleteEmployeeModal" class="modal fade" data-backdrop="static" data-keyboard="false">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<form id="delete-employee-form">
+					<div class="modal-header">
+						<h4 class="modal-title">คุณแน่ใจหรือว่าต้องการลบ ?</h4>
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					</div>
+					<div class="modal-body">
+						<p>ต้องการลบรายการจองคิวนี้ออก ใช่ หรือ ไม่</p>
+						<p class="text-warning"><small>หากลบไปแล้วจะไม่สามารถนำรายการนี้กลับมาได้อีก</small></p>
+					</div>
+					<div class="modal-footer">
+						<input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
+						<input type="submit" class="btn btn-danger" value="Delete">
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+        <!-- content-wrapper ends -->
+        <!-- partial:partials/_footer.html -->
+        <footer class="footer">
+            <div class="card">
+                <div class="card-body">
+                    <div class="d-sm-flex justify-content-center justify-content-sm-between">
+                        <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">DustMasterThailand - บริการดูดไร้ฝุ่น © 2023 <a href="https://www.bootstrapdash.com/" class="text-muted" target="_blank"></span>
+                        <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center text-muted">Admin <a href="https://www.bootstrapdash.com/" class="text-muted" target="_blank">Bootstrap dashboard</a> templates from Bootstrapdash.com</span>
+                    </div>
+                </div>    
+            </div>        
+        </footer>
+        <!-- partial -->
+      </div>
+      <!-- main-panel ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+
+  <!-- base:js -->
+  <script src="/admin/template/vendors/js/vendor.bundle.base.js"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page-->
+  <script src="/admin/template/vendors/chart.js/Chart.min.js"></script>
+  <!-- End plugin js for this page-->
+  <!-- inject:js -->
+  <script src="/admin/template/js/off-canvas.js"></script>
+  <script src="/admin/template/js/hoverable-collapse.js"></script>
+  <script src="/admin/template/js/template.js"></script>
+  <script src="/admin/template/js/settings.js"></script>
+  <script src="/admin/template/js/todolist.js"></script>
+  <!-- endinject -->
+  <!-- Custom js for this page-->
+  <script src="/admin/template/js/dashboard.js"></script>
+  <!-- End custom js for this page-->
+
+
+
+  <script src="/admin/template/js/vendor/jquery.min.js"></script>
+	<script src="/admin/template/js/vendor/bootstrap.min.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase.js"></script>
+	<script>
+	
+		var firebaseConfig = {
+			apiKey: "AIzaSyBVKOSW6nRgjcTLV27PcRZvuycK__VgQlg",
+    		authDomain: "iconic-treat-228213.firebaseapp.com",
+    		databaseURL: "https://iconic-treat-228213.firebaseio.com",
+    		projectId: "iconic-treat-228213",
+    		storageBucket: "iconic-treat-228213.appspot.com",
+    		messagingSenderId: "123120858887",
+    		appId: "1:123120858887:web:8ed330f6f98376ab"
+		};
+		firebase.initializeApp(firebaseConfig);
+		const db = firebase.firestore();
+		
+	</script>
+
+
+
+
+
+
+
+	<script src="/admin/manage/js/script.js"></script>
+
+
+  <script src="/SignUp/js/app.js"></script>
+</body>
+
+</html>
+
