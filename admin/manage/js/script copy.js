@@ -768,7 +768,7 @@ $(document).ready(function () {
 				console.log("Document written with ID: ", docRef.id);
 				Swal.fire({
 					icon: 'success',
-					title: 'ลงทะเบียนเรียบร้อย',
+					title: 'นัดหมายเรียบร้อยแล้ว',
 				
 				  
 				}).then((value) => {
