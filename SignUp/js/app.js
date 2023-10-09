@@ -184,7 +184,7 @@ function signIn(){
 
             }).then((value) => {
                 setTimeout(function(){
-                    window.location.replace("/admin/template/index.html");
+                    window.location.replace("/admin.html");
                 }, 1000)
             });
         }).catch((error) => {
