@@ -749,7 +749,7 @@ $(document).ready(function () {
 	});
 
 	// ADD EMPLOYEE
-	$("#add-employee-form").submit(function (event) {
+	$("#add-employee-form2").submit(function (event) {
 		event.preventDefault();
 		let employeeName = $('#employee-name').val();
 		let employeeEmail = $('#employee-email').val();
@@ -768,12 +768,12 @@ $(document).ready(function () {
 				console.log("Document written with ID: ", docRef.id);
 				Swal.fire({
 					icon: 'success',
-					title: 'เพิ่มรายการจองคิวเรียบร้อย',
+					title: 'จองคิวบริการเรียบร้อย',
 				
 				  
 				}).then((value) => {
 					setTimeout(function(){
-						window.location.replace("/admin.html");
+						window.location.replace("/shop-a.html");
 					}, 1000)
 				});
 
@@ -848,23 +848,11 @@ $(document).ready(function () {
 		let employeePhone =  $('#edit-employee-form  #employee-phone').val();
 
 		db.collection('employees').doc(id).update({
-			
 			name: employeeName,
 			email: employeeEmail,
 			address: employeeAddress,
 			phone: employeePhone,
 			updatedAt : firebase.firestore.FieldValue.serverTimestamp()
-			
-		});
-		Swal.fire({
-			icon: 'success',
-			title: 'แก้ไขรายการเรียบร้อย',
-		
-		  
-		}).then((value) => {
-			setTimeout(function(){
-				
-			}, 1000)
 		});
 
 		$('#editEmployeeModal').modal('hide');
@@ -891,16 +879,6 @@ $(document).ready(function () {
 			db.collection('employees').doc(id).delete()
 				.then(function () {
 					console.log("Document successfully delete!");
-					Swal.fire({
-						icon: 'success',
-						title: 'ลบรายการเรียบร้อย',
-					
-					  
-					}).then((value) => {
-						setTimeout(function(){
-							window.location.replace("/admin.html");
-						}, 1000)
-					});
 					$("#deleteEmployeeModal").modal('hide');
 				})
 				.catch(function (error) {
@@ -910,30 +888,13 @@ $(document).ready(function () {
 			let checkbox = $('table tbody input:checked');
 			checkbox.each(function () {
 				db.collection('employees').doc(this.value).delete()
-				
-				
 					.then(function () {
-						
-						
 						console.log("Document successfully delete!");
-						Swal.fire({
-							icon: 'success',
-							title: 'ลบรายการเรียบร้อย',
-						
-						  
-						}).then((value) => {
-							setTimeout(function(){
-								window.location.replace("/admin.html");
-							}, 1000)
-						});
 						displayEmployees();
-						
-						
 					})
 					.catch(function (error) {
 						console.error("Error deleting document: ", error);
 					});
-					
 			});
 			$("#deleteEmployeeModal").modal('hide');
 		}
@@ -983,3 +944,87 @@ $(document).ready(function () {
 		$('.modal:visible').each(centerModal);
 	});
 }(jQuery));
+
+
+
+const search = document.getElementById("search");
+const matchList = document.getElementById("matchList");
+
+const itemDistrict = document.getElementById("district");
+const itemAmphoe = document.getElementById("amphoe");
+const itemProvince = document.getElementById("province");
+const itemZipcode = document.getElementById("zipcode");
+
+// Get thailand
+const getThailand = async () => {
+  const response = await fetch("../data/thailand.json");
+
+  addresses = await response.json();
+  //console.log(address);
+};
+
+// Search thailand.json and filter it
+const searchAddress = (searchText) => {
+  // Get matches to current text input
+  let matchItems = addresses.filter((address) => {
+    const regex = new RegExp(`^${searchText}`, "gi");
+    return (
+      address.district.match(regex) ||
+      address.districtEng.match(regex) ||
+      address.amphoe.match(regex) ||
+      address.amphoeEng.match(regex) ||
+      address.province.match(regex) ||
+      address.provinceEng.match(regex)
+    );
+  });
+
+  if (searchText.length === 0) {
+    matchItems = [];
+    matchList.innerHTML = "";
+
+    itemDistrict.value = "";
+    itemAmphoe.value = "";
+    itemProvince.value = "";
+    itemZipcode.value = "";
+  }
+
+  //console.log(matchItems);
+  // Add to match list
+  outputHtml(matchItems);
+};
+
+// Show results in HTML
+const outputHtml = (matchItems) => {
+  if (matchItems.length > 0) {
+    const html = matchItems
+      .map(
+        (item) =>
+          `<li><span class="w3-large">${item.district}, ${item.amphoe}, ${item.province}, ${item.zipcode}</span><br><span class="w3-small w3-opacity">${item.districtEng}, ${item.amphoeEng}, ${item.provinceEng}, ${item.zipcode}</span></li>`
+      )
+      .join("");
+
+    //console.log(html);
+    matchList.innerHTML = `<ul class="match-items w3-ul w3-hoverable w3-border">${html}</ul>`;
+    // Selection item
+    matchList.addEventListener("click", selection);
+  }
+};
+
+function selection(event) {
+  const item = event.target;
+  //console.log(item.firstChild.textContent);
+  search.value = item.firstChild.textContent;
+  matchList.innerHTML = "";
+
+  const items = item.firstChild.textContent.split(", ");
+  //console.log(items);
+
+  itemDistrict.value = items[0];
+  itemAmphoe.value = items[1];
+  itemProvince.value = items[2];
+  itemZipcode.value = items[3];
+}
+
+// Eventlistener
+window.addEventListener("DOMContentLoaded", getThailand);
+search.addEventListener("input", () => searchAddress(search.value));
