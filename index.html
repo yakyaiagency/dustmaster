@@ -308,13 +308,12 @@
 												  </div>
 												
 											</div>
-											<div class="input-info position-relative">
-												
-												<label  class="d-block">ที่อยู่บริการ</label>
-												<input type="text" id="employee-address" onload="init()" data-bs-toggle="modal" data-bs-target="#exampleModalmap" placeholder="ระบุเพิ่มเติมพอ สังเขป" required>
-												<i class="fas fa-location" data-bs-toggle="modal" data-bs-target="#exampleModalmap" ></i>
+											<div class="input-info position-relative">	
+												<label class="d-block">ที่อยู่บริการ </label>
+												<textarea  id="employee-address" class="form-control"  cols="45" rows="3" placeholder="ระบุเพิ่มเติมพอสังเขป" required></textarea>
 												
 											</div>
+
 											<div class="input-info position-relative">
 												<label class="d-block">เบอร์โทรศัพท์</label>
 												<input type="text" id="employee-phone" placeholder="xxx-xxx-xxxx" required>
@@ -871,26 +870,50 @@
 								<h3>พร้อมให้บริการ ครอบคลุมทุกพื้นที่ รวดเร็วทันใจ</h3>
 							</div>
 							<div class="ori-seven-contact-form-wrap headline pera-content">
-								<form action="/index.html">
+								<form id="add-employee-form" action="/index.html">
 									<div class="input-info position-relative">
 										<label class="d-block">ชื่อผู้ใช้บริการ</label>
-										<input type="text" placeholder="ชื่อ - นามสกุล">
+										
+
+										<input type="text" id="employee-name" placeholder="ชื่อ - นามสกุล" required>
 										<i class="fas fa-user"></i>
 									</div>
 									<div class="input-info position-relative">
-										<label class="d-block">เบอร์ติดต่อ</label>
-										<input type="text" placeholder="xxx-xxx-xxxx">
-										<i class="fas fa-phone-alt"></i>
+										
+										
+										<div class="form-group row">
+											<label class="col-sm-3 col-form-label">แพ็คเกจ</label>
+											<div class="col-sm-9">
+											  <select id="employee-email"class="form-control">
+												<option>SET-A</option>
+												<option>SET-B</option>
+												<option>SET-C</option>
+												<option>SET-D</option>
+											  </select>
+											</div>
+										</div>
+										
 									</div>
 									<div class="input-info position-relative">
-										<label class="d-block">สถานที่ใช้บริการ*</label>
-										<input type="text" placeholder="ตำแหน่งที่ใช้บริการ">
-										<i class="fas fa-envelope"></i>
+										
+										<label  class="d-block">ที่อยู่บริการ</label>
+										<input type="text" id="employee-address" onload="init()" data-bs-toggle="modal" data-bs-target="#exampleModalmap" placeholder="ระบุเพิ่มเติมพอ สังเขป" required>
+										<i class="fas fa-location" data-bs-toggle="modal" data-bs-target="#exampleModalmap" ></i>
+										
 									</div>
+									<div class="input-info position-relative">
+										<label class="d-block">เบอร์โทรศัพท์</label>
+										<input type="text" id="employee-phone" placeholder="xxx-xxx-xxxx" required>
+										<i class="fas fa-phone"></i>
+									</div>
+
+									
+									
+									<button type="submit">จองคิวบริการ <i class="far fa-long-arrow-right" value="เพิ่มรายการคิวจอง"></i></button>
 								
 									
 								</form>
-								<button class="btn btn-outline-success" onclick="showSwal2('success-message2')">จองคิวบริการ</button>
+							
 							</div>
 						</div>
 					</div>

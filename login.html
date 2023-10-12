@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title> Admin-DustMasterThailand </title>
+  <!-- base:css -->
+  <link rel="stylesheet" href="../../vendors/typicons/typicons.css">
+  <link rel="stylesheet" href="../../vendors/css/vendor.bundle.base.css">
+  <!-- endinject -->
+  <!-- plugin css for this page -->
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="../../css/vertical-layout-light/style.css">
+  <!-- endinject -->
+  <link rel="shortcut icon" href="../../images/favicon.png" />
+  <script src="/SignUp/js/sweetalert2.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+ 
+</head>
+
+<body>
+  <div class="container-scroller">
+    <div class="container-fluid page-body-wrapper full-page-wrapper">
+      <div class="content-wrapper d-flex align-items-center auth px-0">
+        <div class="row w-100 mx-0">
+          <div class="col-lg-4 mx-auto">
+            <div class="auth-form-light text-left py-5 px-4 px-sm-5">
+              <div class="brand-logo ">
+                <img src="/admin/template/images/logo-big.png" alt="logo">
+              </div>
+       
+              
+              <form class="pt-3">
+                <div id="signInForm">
+                  <h1 class="h2 text-center text-dark mb-3">เข้าสู่ระบบ</h1>
+                  <div class="form-group">
+                      <label for="userSIEmail">Email Admin<span class="text-danger ml-1">*</span></label>
+                      <input type="email" class="form-control" id="userSIEmail" onblur="checkUserSIEmail()"placeholder="mail@mail.com">
+                      <small id="userSIEmailError" class="form-text text-danger">Please check your login information.</small>
+                  </div>
+                  <div class="form-group">
+                      <label for="userSIPassword">Password<span class="text-danger ml-1">*</span></label>
+                      <input type="password" class="form-control" id="userSIPassword" onblur="checkUserSIPassword()" placeholder="password">
+                      <small id="userSIPasswordError" class="form-text text-danger">Please check your password.</small>
+                  </div>
+                 
+                  <div class="mt-3">
+                    <a class="btn btn-block btn btn-info btn-lg font-weight-medium auth-form-btn" onclick="signIn()">เข้าสู่ระบบ</a>
+                  </div>
+              </div>
+              
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- content-wrapper ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+  <!-- base:js -->
+  <script src="../../vendors/js/vendor.bundle.base.js"></script>
+  <!-- endinject -->
+  <!-- inject:js -->
+  <script src="../../js/off-canvas.js"></script>
+  <script src="../../js/hoverable-collapse.js"></script>
+  <script src="../../js/template.js"></script>
+  <script src="../../js/settings.js"></script>
+  <script src="../../js/todolist.js"></script>
+
+
+
+  <script src="https://www.gstatic.com/firebasejs/5.9.4/firebase.js"></script>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-app.js"></script>
+  
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+       https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-analytics.js"></script>
+  <!-- Add Firebase products that you want to use -->
+  <script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-auth.js"></script>
+  
+  <script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-database.js"></script>
+  
+  
+  <script>
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyBVKOSW6nRgjcTLV27PcRZvuycK__VgQlg",
+      authDomain: "iconic-treat-228213.firebaseapp.com",
+      databaseURL: "https://iconic-treat-228213.firebaseio.com",
+      projectId: "iconic-treat-228213",
+      storageBucket: "iconic-treat-228213.appspot.com",
+      messagingSenderId: "123120858887",
+      appId: "1:123120858887:web:8ed330f6f98376ab"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+  </script>
+
+    <!-- Custom JavaScript -->
+    <script src="/SignUp/js/app.js"></script>
+  <!-- endinject -->
+</body>
+
+</html>
