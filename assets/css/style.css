@@ -6209,12 +6209,24 @@ font-family: 'Mitr', sans-serif;
 }
 
 
+.ori-seven-contact-form-wrap .input-info textarea {
+  color: #33609e;
+  font-size: 20px;
+  font-weight: 200;
+
+}
+
+
+
+
 .ori-seven-contact-form-wrap .input-info option {
   color: #33609e;
   font-size: 20px;
   font-weight: 200;
 
 }
+
+
 
 .ori-seven-contact-form-wrap .input-info select {
   color: #33609e;
